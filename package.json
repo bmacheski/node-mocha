@@ -4,12 +4,15 @@
   "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "node_modules/.bin/mocha"
+    "test": "istanbul cover _mocha",
+    "codeclimate-coverage": "codeclimate-test-reporter < ./coverage/lcov.info"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "chai": "^3.2.0",
+    "codeclimate-test-reporter": "^0.1.0",
+    "istanbul": "^0.3.17",
     "mocha": "^2.2.5"
   }
 }
