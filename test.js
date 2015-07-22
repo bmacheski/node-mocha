@@ -8,7 +8,7 @@ var cp = require('child_process');
     });
   });
 
-  describe.only('CLI', function() {
+  describe('CLI', function() {
     it('should thank me for stopping by', function(done){
       cp.execFile('./app.js', function(err, stdout) {
         stdout.should.equal('thanks for stopping by!\n')
